@@ -1,6 +1,7 @@
 //There are three functions to create tht we already called in html that is 1)appendToDisplay 2)clearDisplay 3) calculate
 
 let desk = document.getElementById("desk");
+let memory = 0;
 
 function appendToDisplay(input) {
   desk.value += input;
@@ -29,3 +30,21 @@ function plusOrMinus() {
     desk.value = parseFloat(desk.value) * -1;
   }
 }
+function clearMemory() {
+  memory = 0;
+}
+function recallMemory() {
+  desk.value += memory;
+}
+function addMemory() {
+  if (desk.vlaue) {
+    memory - +parseFloat(desk.value);
+  }
+}
+function subtractMemory() {
+  if (desk.value) {
+    memory -= parseFloat(desk.value);
+  }
+}
+//https://kate-nm-currency-converter.netlify.app/
+//https://kate-nm-calculator-app.netlify.app/
